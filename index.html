@@ -227,9 +227,9 @@
 /* Final report: six labelled readiness columns, percent fill reflects true value. */
 .report-chart{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;height:156px;gap:9px;margin:20px 0 26px}
 .report-chart .report-bar{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;min-width:0;min-height:0;height:100%;padding:12px 5px;border:1px solid #4b7c8d;border-radius:11px;overflow:hidden;background:#133247;color:#fff;isolation:isolate}
-.report-chart .report-bar-fill{position:absolute;z-index:-1;bottom:0;left:0;right:0;width:100%;border-radius:0;background:linear-gradient(0deg,#317489,#86e9d9);transition:height .35s ease}
-.report-chart .report-bar-round{position:static;display:block;width:auto;bottom:auto;text-align:center;font-size:14px;line-height:1.25;font-weight:850;letter-spacing:.035em;color:#f4ffff;background:#082838c9;border:1px solid #b2fbeb44;border-radius:6px;padding:5px 7px}
-.report-chart .report-bar-value{position:static;display:block;font-size:clamp(19px,2.2vw,27px);line-height:1.15;font-weight:900;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 2px 5px #052234b0}
+.report-chart .report-bar-fill{position:absolute;z-index:0;bottom:0;left:0;right:0;width:100%;border-radius:0;background:linear-gradient(0deg,#317489,#86e9d9);transition:height .35s ease}
+.report-chart .report-bar-round{position:relative;z-index:1;display:block;width:auto;bottom:auto;text-align:center;font-size:14px;line-height:1.25;font-weight:850;letter-spacing:.035em;color:#f4ffff;background:#082838c9;border:1px solid #b2fbeb44;border-radius:6px;padding:5px 7px}
+.report-chart .report-bar-value{position:relative;z-index:1;display:block;font-size:clamp(19px,2.2vw,27px);line-height:1.15;font-weight:900;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 2px 5px #052234b0}
 @media(max-width:700px){.report-chart{grid-template-columns:repeat(3,minmax(0,1fr));height:auto;gap:9px}.report-chart .report-bar{height:125px}}
 @media(max-width:360px){.report-chart{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
