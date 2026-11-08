@@ -142,6 +142,87 @@
   .network-overview{flex-wrap:wrap}
   .network-overview-stat{white-space:normal}
 }
+
+/* === Fuel Sovereignty | global dashboard readability v3 | all 6 crises | ES + EN === */
+/* Restore legibility for every crisis; do not shrink labels to fit small cards. */
+.metric small,
+.subhead small,
+.network-bottom,
+.network-overview small,
+.network-overview-stat span,
+.supply-foot,
+.rangebar span,
+.forecast-legend > div,
+.forecast-legend b,
+.forecast-finance small,
+.forecast-section-heading small,
+.coverage-caption,
+.coverage-context .coverage-state,
+.forecast-disclaimer,
+.safety,
+.forecast-finance strong span {
+  font-size:14px !important;
+  line-height:1.5 !important;
+}
+.network-overview strong,
+.source-key {font-size:14px !important;line-height:1.4 !important;letter-spacing:.025em !important;white-space:normal !important}
+.network-overview strong {overflow-wrap:anywhere}
+.network-overview-stat b {font-size:18px !important}
+.network-overview small {display:inline !important;color:#c1d8e4 !important}
+.network-overview-stat span {display:inline !important;color:#b8d3df !important}
+.source-card {min-height:125px}
+.source-card-top {gap:7px;flex-wrap:wrap}
+.source-card-status {font-size:13px !important;line-height:1.4 !important;letter-spacing:0 !important}
+.source-card-middle strong {font-size:22px !important}
+.source-card-middle small {font-size:14px !important;max-width:none !important;line-height:1.4 !important;color:#d2e3eb !important}
+.endpoint-overline,.fleet-card > span,.depot-card > small,.fleet-state {font-size:14px !important;line-height:1.4 !important;letter-spacing:0 !important}
+.endpoint-detail,.endpoint-detail span,.endpoint-detail b {font-size:14px !important;line-height:1.5 !important}
+.endpoint-detail {gap:5px;flex-wrap:wrap}
+.endpoint-detail span{color:#d3e7ef !important}
+.fleet-card > strong small {font-size:14px !important}
+.incident-eyebrow {font-size:14px !important}
+.incident p,.keyline {font-size:16px !important;line-height:1.6 !important}
+.incident .keyline strong {font-size:15px !important}
+.act-text strong {font-size:16px !important;line-height:1.4 !important}
+.act-text span {font-size:15px !important;line-height:1.55 !important;color:#d8e8ef !important}
+.action {padding:15px !important;min-height:66px}
+.supplier-name {font-size:16px !important;line-height:1.35 !important}
+.supplier-desc {font-size:15px !important;line-height:1.55 !important;color:#d5e8f1 !important}
+.rangebar span {min-width:92px !important;overflow-wrap:break-word;text-align:right}
+.forecast-legend span,.forecast-legend b {font-size:14px !important}
+.forecast-finance strong {overflow-wrap:anywhere}
+.network-bottom {flex-wrap:wrap}
+.network-bottom span{min-width:0}
+/* Replace the compact mini-network at constrained widths with an actual legible diagram. */
+@container (max-width:760px){
+ .network-stage {display:grid !important;grid-template-columns:minmax(0,1fr) !important;gap:16px !important;padding:16px !important;min-height:0 !important}
+ .network-source-stack {display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:10px !important;height:auto !important}
+ .source-card {display:flex !important;flex-direction:column !important;min-height:176px !important;padding:12px !important}
+ .source-card-top {flex-direction:column !important;align-items:flex-start !important}
+ .source-card-middle {flex-direction:column !important;align-items:flex-start !important;gap:6px !important;margin-top:auto !important}
+ .source-card-middle small {text-align:left !important}
+ .network-transit {display:none !important}
+ .network-endpoints {display:grid !important;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr) !important;gap:12px !important;width:100% !important}
+ .depot-card,.fleet-card {min-height:235px !important;padding:17px 15px !important}
+ .endpoint-detail {justify-content:space-between !important}
+}
+@container (max-width:520px){
+ .network-source-stack {grid-template-columns:1fr !important}
+ .source-card {min-height:112px !important}
+ .source-card-top,.source-card-middle {flex-direction:row !important;align-items:center !important;flex-wrap:wrap !important}
+ .network-endpoints {grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) !important;gap:6px !important}
+ .depot-card,.fleet-card {padding:13px 8px !important}
+ .endpoint-detail {flex-direction:column !important;text-align:center !important;align-items:center !important}
+}
+@media(max-width:600px){
+ .supplier-head {flex-wrap:wrap}
+ .supplier-desc {margin-left:0 !important}
+ .rangebar {flex-wrap:wrap}
+ .rangebar input {flex-basis:100%}
+ .rangebar span {text-align:left !important}
+ .network-overview,.network-overview-stat {flex-wrap:wrap}
+}
+/* === end global dashboard readability v3 === */
 </style>
 </head>
 <body>
