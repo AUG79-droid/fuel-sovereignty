@@ -1,0 +1,3 @@
+# Fuel Sovereignty — resilience review
+
+Six original rounds, theory and images retained. Added same-state no-action comparisons, original versus adjusted demand, reserve and budget limitations, known non-external supply share (emergency origin unknown), and a bounded flood adaptation example. The game score is not a learning or real fleet availability measure. Corrected review/reload/home navigation and new assessment restart; old local progress remains under v1. Common assessment instrument and JSON schema unchanged. No validated climate model, fuel qualification, operational data or actual emissions calculation. Specialist and full visual review remain required.
